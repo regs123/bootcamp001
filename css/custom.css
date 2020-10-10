@@ -1,0 +1,344 @@
+/* Colors
+Black = #000000
+Orange = #FF671F */
+
+:root {
+	--main-color:#000000;
+	--secondary-color: #FF671F;
+}
+
+* {
+	padding: 0 !important;
+	margin: 0 !important;
+	box-sizing: border-box !important;
+	font-family: 'Abel', sans-serif;
+	/* font-family: 'Bebas Neue', cursive; */
+}
+
+.hero {
+	position: relative;
+	background-image: url(./../images/hero.jpg);
+	background-size: cover;
+	height: 90vh;
+	background-attachment: fixed; 
+}
+
+.slide {
+	position: absolute;
+	height: 100%;
+}
+
+.carousel-inner {
+	position: absolute;
+	height: 100%;
+}
+.carousel-item {
+	position: absolute; 
+	top: 40%; 
+	height: 100%;
+	width: 100%;
+	text-align: center;	
+}
+
+.carousel-item h2 {
+	color: white;
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+
+
+
+
+/* NAVBAR */
+#navbar {
+	z-index: 2;
+	background: linear-gradient(to left, #494949 25%, #000000 75%);
+}
+
+.navbar-toggler {
+	height: 2.5em;
+	width: 2.5em;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+  
+.sticky + .container-fluid {
+	padding-top: 60px;
+}
+
+.logo {
+	height: 3.5em;
+}
+
+.navbar-brand {
+	margin: 0.3em 0 0.3em 5em !important;
+}
+
+.navbar-nav {
+	margin-right: 5em !important;
+}
+
+.navbar-nav li {
+	padding: 0 0.5em !important;
+}
+
+.navbar-nav li a {
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.navbar-nav li a:hover {
+	color: #FF671F !important;
+}
+
+.dropdown-menu {
+	background-color: #494949 !important;
+	padding: 0.8em !important;
+}
+
+.dropdown-menu a:hover {
+	background-color: #494949 !important;
+}
+
+
+
+/* SIDEBAR */
+.sidebar {
+	background-color: white;
+}
+
+.sidebar h3 {
+	margin: 4rem !important;
+	text-transform: bold;
+}
+
+.sidebar ul li{
+	margin-bottom: 1.5rem !important;
+}
+
+.sidebar ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.sidebar ul li:hover {
+	border-right: 5px solid var(--secondary-color);
+}
+
+.sidebar ul li a:hover {
+	color: var(--secondary-color);
+	font-weight: bold;
+}
+
+
+
+
+/* CONTENT */
+
+.content .row {
+	padding-bottom: 5em !important;
+}
+.cardContent {
+	margin-top: 4rem !important;
+	padding: 0 1.3em !important;
+}
+
+.cardContent .card {
+	box-shadow: 8px 8px 12px #888888;
+	
+}
+
+/* .cardContent .card img {
+	position: absolute;
+	padding: 0 1em 0 1em !important;
+	top: -2em;
+	
+} */
+
+
+.card-body h4 a {
+	color: black;
+	text-decoration: none;
+}
+
+.card-body h4 a:hover {
+	color: var(--secondary-color);
+}
+
+.card-body .btn {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0.3rem !important;
+}
+
+.card-body .btn:hover {
+	background-color: var(--main-color);
+	color: rgb(255, 172, 19);
+}
+
+
+
+
+
+/* SPONSORS */
+.stretch-card>.card {
+	width: 100%;
+	min-width: 100%
+}
+
+.flex {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+.owl-carousel .item {
+	margin: 1.5em !important;
+}
+
+.owl-carousel .item img {
+	display: block;
+	width: 100%;
+	height: auto
+}
+
+.card-body h2 {
+	padding-top: 2em !important;
+}
+
+
+
+/* NUMBER */
+.number1 div {
+	padding: 2em !important; 
+}
+.number1 div h3{
+	color: var(--secondary-color);
+}
+
+.number1 div h4{
+	text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: linear-gradient(to bottom, #494949 25%, #000000 75%);
+	/* background-color: #000000; */
+}
+
+.footerContent div {
+	padding: 2em 0 !important;
+}
+
+.footerLogo {
+	height: 3em;
+}
+
+.socials i {
+	color: white;
+	font-size: 2.7rem;
+	margin: 0 0.2em !important;
+}
+
+.socials i:hover {
+	color: #ff671f;
+	transform: scale(1.1);
+}
+
+.powered {
+	padding: 1.2em 0 !important;
+}
+
+.powered img {
+	height: 3.5em;
+}
+
+.powered p {
+	color: #4f4b4b;
+	font-weight: bold;
+	font-family: 'Staatliches', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Media Query*/
+@media (max-width: 1024px) {
+
+	
+}
+
+
+@media (max-width: 952px) {
+	.navbar-brand {
+		margin-left: 1em !important;
+	}
+
+	.navbar-nav {
+		margin: 0 !important;
+	}
+
+	.navbar-nav li a{
+		border-bottom: 1px solid white;
+	}
+
+	.footerLogo {
+		height: 2em;
+	}
+
+	
+}
+
+
+@media (max-width: 767px) {
+
+
+	.navbar-brand {
+		margin: 0.3em !important;
+	}
+
+	.navbar-nav {
+		margin: 0 !important;
+	}
+
+	.logo {
+		height: 2.5em;
+	}
+
+	.navbar-nav li a{
+		border-bottom: 1px solid white;
+	}
+
+	.carousel-inner {
+		background-color: rgba(0, 0, 0, 0.2);	
+	}
+	
+	.carousel-item h2 {
+		color: white;
+		font-size: 4rem;
+		font-weight: bold;
+	}
+
+	.owl-carousel .item {
+		width: 6.5em;
+	}
+
+	.owl-carousel .item img{
+		width: 100% !important;
+	}
+}
